@@ -39,12 +39,15 @@
             </button>
           </li>
           <li>
-            <button type="button" class="secondary-btn btn-border-none">
+            <button
+              type="button"
+              class="secondary-btn btn-border-none font-weight-400"
+            >
               Sign up
             </button>
           </li>
           <li>
-            <button type="button" class="primary-btn btn-style">
+            <button type="button" class="primary-btn btn-style font-weight-500">
               Request Demo<i
                 class="fa-solid fa-arrow-up-right-from-square p-left"
               ></i>
@@ -54,43 +57,61 @@
       </nav>
     </header>
     <main>
-      <section id="signin" class="signin-class">
-        <h1>Sign In</h1>
-        <h2>Hey, Enter your details to login to your account</h2>
-        <form action="" method="post">
-          <label for="user">User</label>
-          <input type="text" id="user" name="user" />
-          <label for="passcode">Passcode</label>
-          <input type="password" id="passcode" name="passcode" />
-          <p>Don't have an account yet? Register now!</p>
-          <button
-            type="submit"
-            class="btn-style primary-btn signin-form-btn btn-border-none"
-          >
-            Sign In
-          </button>
-        </form>
-        <p>Or Sign in with</p>
-        <div class="social-media-buttons">
-          <button type="button" class="btn-style secondary-btn">
-            <i class="fa-brands fa-google p-right"></i>Google
-          </button>
-          <button type="button" class="btn-style secondary-btn">
-            <i class="fa-brands fa-apple p-right"></i>Apple ID
-          </button>
-          <button type="button" class="btn-style secondary-btn">
-            <i class="fa-brands fa-facebook p-right"></i>Facebook
-          </button>
+      <div class="flexbox">
+        <div class="signin-div">
+          <section id="signin" class="card">
+            <h1 class="font-weight-bold">Sign In</h1>
+            <h2 class="font-weight-400">
+              Hey, Enter your details to login to your account
+            </h2>
+            <form action="" method="post">
+              <label for="user">User</label>
+              <input
+                type="text"
+                id="user"
+                name="user"
+                placeholder="  Enter Email / Phone No"
+              />
+              <label for="passcode">Passcode</label>
+              <input
+                type="password"
+                id="passcode"
+                name="passcode"
+                placeholder="  Passcode"
+              />
+              <p class="font-size-12 font-weight-400 p-color">
+                Don't have an account yet? Register now!
+              </p>
+              <button
+                type="submit"
+                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500"
+              >
+                Sign In
+              </button>
+            </form>
+            <p class="font-size-12 font-weight-500">Or Sign in with</p>
+            <div class="social-media-buttons">
+              <button type="button" class="btn-style secondary-btn">
+                <i class="fa-brands fa-google p-right"></i
+                ><span class="font-weight-700 font-size-13">Google</span>
+              </button>
+              <button type="button" class="btn-style secondary-btn">
+                <i class="fa-brands fa-apple p-right"></i
+                ><span class="font-weight-700 font-size-13">Apple ID</span>
+              </button>
+              <button type="button" class="btn-style secondary-btn">
+                <i class="fa-brands fa-facebook p-right"></i
+                ><span class="font-weight-700 font-size-13">Facebook</span>
+              </button>
+            </div>
+            <span class="font-size-12 font-weight-500"
+              >Don't have an account?</span
+            ><a href="" class="font-weight-700 font-size-12"> Register now!</a>
+          </section>
         </div>
-        <span>Don't have an account?</span><a href=""> Register now!</a>
-      </section>
-      <section id="signin-img" class="signing-img-class">
-        <img
-          src="./images/landing-img.png"
-          alt="landing-page-image"
-          class="landing-img"
-        />
-      </section>
+
+        <section id="signin-img" class="signing-img-class"></section>
+      </div>
     </main>
   </body>
 </html>
