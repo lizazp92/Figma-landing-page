@@ -27,7 +27,7 @@
     <title>Landing page</title>
   </head>
   <body>
-    <header id="header" class="header">
+    <header id="header">
       <nav class="nav-bar">
         <ul class="nav-list">
           <li>
@@ -59,37 +59,43 @@
     <main>
       <div class="flexbox">
         <div class="signin-div">
-          <section id="signin" class="card">
-            <h1 class="font-weight-bold">Sign In</h1>
-            <h2 class="font-weight-400">
+          <section id="signin">
+            <h1 class="font-weight-bold m-bottom12">Sign In</h1>
+            <h2 class="font-weight-400 m-bottom32">
               Hey, Enter your details to login to your account
             </h2>
-            <form action="" method="post">
-              <label for="user">User</label>
+            <form action="" method="post" class="formstyle">
+              <label for="user">username</label>
               <input
                 type="text"
                 id="user"
                 name="user"
-                placeholder="  Enter Email / Phone No"
+                placeholder="Enter Email / Phone No"
+                class="m-bottom12"
               />
               <label for="passcode">Passcode</label>
               <input
                 type="password"
                 id="passcode"
                 name="passcode"
-                placeholder="  Passcode"
+                placeholder="Passcode"
+                class="m-bottom12"
               />
-              <p class="font-size-12 font-weight-400 p-color">
+              <p
+                class="font-size-12 font-weight-400 p-color m-bottom32 textalign-left"
+              >
                 Don't have an account yet? Register now!
               </p>
               <button
                 type="submit"
-                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500"
+                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500 m-bottom32"
               >
                 Sign In
               </button>
             </form>
-            <p class="font-size-12 font-weight-500">Or Sign in with</p>
+            <p class="font-size-12 font-weight-500 m-bottom32 sign-in-text">
+              Or Sign in with
+            </p>
             <div class="social-media-buttons">
               <button type="button" class="btn-style secondary-btn">
                 <i class="fa-brands fa-google p-right"></i
@@ -99,7 +105,7 @@
                 <i class="fa-brands fa-apple p-right"></i
                 ><span class="font-weight-700 font-size-13">Apple ID</span>
               </button>
-              <button type="button" class="btn-style secondary-btn">
+              <button type="button" class="btn-style secondary-btn m-bottom32">
                 <i class="fa-brands fa-facebook p-right"></i
                 ><span class="font-weight-700 font-size-13">Facebook</span>
               </button>
@@ -110,7 +116,7 @@
           </section>
         </div>
 
-        <section id="signin-img" class="signing-img-class"></section>
+        <section id="signin-img" class="signin-img-class"></section>
       </div>
     </main>
   </body>

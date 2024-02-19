@@ -1,10 +1,9 @@
 body {
   margin-top: 0;
-  padding-top: 18.5px;
-  margin-right: 70px;
-  margin-left: 160px;
+  padding: 18.5px 70px 0 150px;
   font-family: "Inter", sans-serif;
   background-color: #f5f2eb;
+  font-size: 16px;
 }
 
 /* HELPER CLASSES */
@@ -15,6 +14,10 @@ body {
   border-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .primary-btn {
   color: #000000;
   background-color: #aed6b3;
@@ -22,6 +25,7 @@ body {
   height: 43px;
   border-radius: 4px;
   border: 1px solid #000000;
+  padding: 12px 12px 12px 18px;
 }
 
 .secondary-btn {
@@ -43,6 +47,13 @@ body {
 .p-left {
   padding-left: 10px;
 }
+.m-bottom32 {
+  margin-bottom: 32px;
+}
+
+.m-bottom12 {
+  margin-bottom: 12px;
+}
 
 .font-weight-700 {
   font-weight: 700;
@@ -53,9 +64,7 @@ body {
 .font-weight-400 {
   font-weight: 400;
 }
-.font-size-16 {
-  font-size: 16px;
-}
+
 .font-size-12 {
   font-size: 12px;
 }
@@ -90,21 +99,36 @@ a {
   margin-right: -5px;
 }
 
+.nav-list > li:first-child {
+  margin-right: -10px;
+}
+
 .global-btn {
   height: 24px;
   width: 24px;
+}
+
+.nav-list > li > button:hover {
+  color: rgb(53, 181, 53);
+}
+.nav-list > li > button:active {
+  color: rgb(65, 56, 56);
+}
+
+.nav-list > li:last-of-type > button:active {
+  background-color: #528366;
 }
 
 /* SIGN IN FORM */
 .signin-div {
   background-color: #ffffff;
   width: 480px;
-  height: 648px;
   border-radius: 30px;
   overflow: hidden;
   margin-top: 80px;
-  margin-right: 89px;
   margin-bottom: 188px;
+  text-align: center;
+  padding: 58px 52px 65px;
 }
 
 h1 {
@@ -124,16 +148,45 @@ h2 {
   font-size: 22px;
 }
 
-input {
-  display: block;
-  width: 376px;
-  height: 48px;
+.formstyle input {
+  display: inline-block;
+  width: 100%;
+  /* width: 376px; */
+  /* height: 48px;  */
   border-radius: 8px;
   border: 1px solid #5d5d5d;
+  padding: 14.5px 24px;
+  box-sizing: border-box;
+}
+.formstyle input::-moz-placeholder {
+  color: #797979;
+  margin-left: 14.5px 24px;
 }
 
-input::placeholder {
-  color: #797979;
+.formstyle label {
+  display: none;
+}
+
+.textalign-left {
+  text-align: left;
+}
+
+.social-media-buttons button:nth-child(2) {
+  margin: 0 3px;
+}
+.social-media-buttons > button:hover,
+.formstyle > button:hover {
+  background-color: #898889;
+}
+.social-media-buttons > button:active,
+.formstyle > button:active {
+  background-color: #528366;
+}
+.sign-in-text::before {
+  content: "—";
+}
+.sign-in-text::after {
+  content: "—";
 }
 
 .flexbox {
@@ -142,7 +195,7 @@ input::placeholder {
   justify-content: center;
 }
 
-.signing-img-class {
+.signin-img-class {
   background-image: url(../images/landing-img.png);
   width: 600px;
   height: 600px;
